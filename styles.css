@@ -1,4 +1,4 @@
-/* Base Reset */
+
 html {
   box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -63,9 +63,9 @@ body {
 
 /* Main Content */
 #main-doc {
-  padding: 20px;
+  padding: 18px;
   flex: 1;
-  order: 2;                   /* Mobile में sidebar के नीचे */
+  order: 2;                   
 }
 
 /* Desktop Layout - Side by Side */
@@ -75,7 +75,7 @@ body {
   }
 
   #navbar {
-    width: 280px;            /* Desktop में fixed width */
+    width: 280px;            
     height: 100vh;
     position: fixed;
     top: 0;
@@ -85,7 +85,7 @@ body {
   }
 
   #main-doc {
-    margin-left: 280px;      /* sidebar width के बराबर space */
+    margin-left: 280px;      
     padding: 40px;
   }
 }
@@ -120,12 +120,11 @@ code {
   border-radius: 4px;
   font-family: 'Courier New', monospace;
   color: #d63384;
-  display: block;                 /* inline की बजाय block बनाओ */
-  white-space: pre-wrap;          /* spaces preserve लेकिन wrap allow */
+  display: block;                 
+  white-space: pre-wrap;          
   word-wrap: break-word;
   overflow-wrap: break-word;
-  word-break: break-all;          /* लंबी unbroken lines को break */
-  max-width: 100%;                /* screen width से ज्यादा न हो */
-  
+  word-break: break-all;          
+  max-width: 100%;                /* overflow breaking */
   margin: 10px 0;
 }
