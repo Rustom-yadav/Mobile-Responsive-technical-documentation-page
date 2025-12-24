@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+
+  <body>
+   <div class = container>
+    <nav id="navbar">
+      <header>full stack curriculum</header>
+      <a class="nav-link" href="#html">HTML</a>
+      <a class="nav-link" href="#css">CSS</a>
+      <a class="nav-link" href="#java-script">Java-Script</a>
+      <a class="nav-link" href="#Python">Python</a>
+      <a class="nav-link" href="#data_base">Data Base</a>
+    </nav>  
+    <main id="main-doc">
+      <section class="main-section" id="html">
+         <header>HTML</header>
+         <p>this is a paragraph describing the html basics</p>
+         <pre>
+            <code>
+             &lt;div class="ex&gt;
+             &lt;img&gt;
+             &lt;/div&gt;
+            </code>
+         </pre>
+         <p>this is a paragraph about html advance</p>
+         <li>List1</li>
+      </section>
+
+      <section class="main-section" id="css">
+        <header>CSS</header>
+        <p>hey there this is css basics</p>
+        <pre>
+          <code>
+             * {
+             box-sizing: inherrit;
+               } 
+          </code>
+        </pre>
+        <p> this is about css responsive design</p>
+        <li>List2</li>
+      </section>
+
+      <section class="main-section" id="java-script">
+        <header>Java-Script</header>
+        <p>I am describing the javascript indroduction</p>
+        
+<pre><code>&lt;script&gt;
+function changeColor() {
+    let colors = ["#ff6b6b", "#4ecdc4", "#45b7d1", "#f9ca24", "#6c5ce7"];
+    let randomColor = colors[Math.floor(Math.random() * colors.length)];
+    document.body.style.backgroundColor = randomColor;
+    console.log("Background changed to: " + randomColor);
+}
+
+// Run every 3 seconds
+setInterval(changeColor, 3000);
+&lt;/script&gt;
+</code></pre>
+
+        <p>this is about java-script functionality</p>
+        <li>List3</li>
+      </section>
+
+      <section class="main-section" id="Python"> 
+        <header>Python</header>
+        <p>this is an introduction of pytnon</p>
+
+<pre><code># Python program to print numbers 1 to 10
+for i in range(1, 11):
+    print(f"Number: {i}")
+
+name = "Rahul"
+print(f"Hello {name}, welcome to Python!")
+</code></pre>
+        <p>now you are going to mastering python</p>
+        <li>List4</li>
+      </section>
+
+      <section class="main-section" id="data_base">
+        <header>Data Base</header>
+        <p>data base is cruicial</p>
+
+<pre><code>-- Create a new table
+CREATE TABLE students (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(50) NOT NULL,
+    age INT,
+    class VARCHAR(20),
+    marks DECIMAL(5,2),
+    joined_date DATE DEFAULT (CURRENT_DATE)
+);
+
+-- Insert dummy data
+INSERT INTO students (name, age, class, marks) VALUES
+('Amit Sharma', 17, '12th A', 92.50),
+('Priya Singh', 16, '11th B', 88.75),
+('Rohan Kumar', 17, '12th A', 79.00),
+('Neha Verma', 16, '11th C', 95.25);
+
+-- Select all students
+SELECT * FROM students;
+</code></pre>
+        <p>data base is  very important part of backend</p>
+        <li>List5</li>
+      </section>
+      
+    </main>
+   </div> 
+  </body>
+</html>
+
